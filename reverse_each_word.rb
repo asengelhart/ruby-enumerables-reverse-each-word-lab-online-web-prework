@@ -1,4 +1,4 @@
-def reverse_each_word(source)
+def reverse_each_word_with_each(source)
   result = []
   source_array = source.split(" ")
   source_array.each {|word| result << word.reverse}
