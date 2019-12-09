@@ -1,7 +1,7 @@
 def reverse_each_word(source)
   result = []
   source_array = source.split(" ")
-  source_array.map {|word| word.reverse}
+  source_array.collect {|word| word.reverse}
   result.reduce("") do |memo, word| 
     if memo != ""
       memo += " "
